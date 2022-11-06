@@ -7,5 +7,6 @@
   "snippets.extends": {
     "typescript": ["javascript"]
   },
-  "jest.binCommand": "yarn jest"
+  "jest.binCommand": "yarn jest",
+  "snippets.ultisnips.pythonPrompt": false
 }

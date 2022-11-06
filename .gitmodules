@@ -26,7 +26,7 @@
 	path = pack/packages/start/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
 [submodule "pack/packages/opt/gruvbox"]
-	path = pack/packages/opt/gruvbox
+	path = pack/packages/start/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
 [submodule "pack/packages/start/vim-airline"]
 	path = pack/packages/start/vim-airline
