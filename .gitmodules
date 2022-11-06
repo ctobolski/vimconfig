@@ -25,9 +25,6 @@
 [submodule "pack/packages/start/fzf.vim"]
 	path = pack/packages/start/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
-[submodule "pack/packages/start/coc.nvim"]
-	path = pack/packages/start/coc.nvim
-	url = https://github.com/neoclide/coc.nvim.git
 [submodule "pack/packages/opt/gruvbox"]
 	path = pack/packages/opt/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
