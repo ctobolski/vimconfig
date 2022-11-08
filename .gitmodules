@@ -41,6 +41,6 @@
 	path = pack/packages/opt/vim-exchange
 	url = https://github.com/tommcdo/vim-exchange.git
 [submodule "pack/packages/start/coc.nvim"]
-	path = pack/packages/start/coc.nvim
+	path = pack/packages/opt/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
 	branch = release
