@@ -4,7 +4,9 @@
 "                                              "
 "###############                ###############"
 filetype plugin on
+set re=0 "because on mac there was excessive redraw time that ruined syntax highlighting
 set mouse=a
+set backspace=indent,eol,start " allow backspace
 set nocompatible "use all features
 set incsearch "search incrementally
 set hls "highlight matches in search
