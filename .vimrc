@@ -7,6 +7,9 @@ packadd vim-airline
 packadd vim-exchange
 packadd vim-repeat
 packadd vim-surround
+packadd vim-fugitive
+packadd vim-graphql
+packadd! vim-startify
 
 
 colorscheme gruvbox

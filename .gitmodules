@@ -48,5 +48,5 @@
 	path = pack/packages/opt/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "pack/packages/opt/vim-startify"]
-	path = pack/packages/opt/vim-startify
+	path = pack/packages/start/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
