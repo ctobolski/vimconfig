@@ -1,3 +1,14 @@
+require('telescope').setup {
+  pickers = {
+    find_files = {
+      hidden = true
+    },
+    live_grep = {
+      hidden = true
+    }
+  }
+}
+
 local builtin = require('telescope.builtin')
 
 vim.keymap.set('n', '<c-p>', builtin.find_files, {})

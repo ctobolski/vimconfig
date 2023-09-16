@@ -31,10 +31,13 @@ local plugins = {
   },
   'christoomey/vim-tmux-navigator',
   --'bluz71/vim-nightfly-colors',
-  --'vim-test/vim-test',
-  --'lewis6991/gitsigns.nvim',
+  'lewis6991/gitsigns.nvim',
   'tpope/vim-fugitive',
   'tpope/vim-surround',
+  'tpope/vim-repeat',
+  'tpope/vim-commentary',
+  --syntax highlighting
+  'jparise/vim-graphql',
   -- completion
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
@@ -49,9 +52,17 @@ local plugins = {
   "jose-elias-alvarez/null-ls.nvim",
   "MunifTanjim/prettier.nvim",
   {
+    "toppair/peek.nvim",
+    build = "deno task --quiet build:fast",
+  },
+  {
 	  'nvim-telescope/telescope.nvim',
 	  tag = '0.1.0',
 	  dependencies = { {'nvim-lua/plenary.nvim'} }
+  },
+  {
+	  'kevinhwang91/nvim-ufo',
+	  dependencies = { {'kevinhwang91/promise-async'} }
   }
 }
 
