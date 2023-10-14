@@ -1,4 +1,5 @@
 local cmp = require("cmp")
+local lsp_sig = require("lsp_signature")
 
 require("luasnip.loaders.from_vscode").lazy_load()
 
@@ -21,4 +22,11 @@ cmp.setup({
   }, {
     { name = 'buffer' },
   }),
+})
+
+lsp_sig.setup({
+  bind = true,
+  handler_opts = {
+    border = "single"
+  }
 })

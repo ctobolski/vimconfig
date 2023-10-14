@@ -1,19 +1,8 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "tsserver" }
+  ensure_installed = { "lua_ls", "tsserver", "graphql" }
 })
 
-
-require('lspsaga').setup({
-  code_action_icon = "💡",
-  symbol_in_winbar = {
-    in_custom = false,
-    enable = true,
-    separator = ' ',
-    show_file = true,
-    file_formatter = ""
-  },
-})
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 --vim ufo is in here to set the folding settings
@@ -35,7 +24,6 @@ keymap("n","gd", "<cmd>Lspsaga goto_definition<CR>")
 keymap('n', 'K', '<Cmd>Lspsaga hover_doc<cr>', { silent = true })
 keymap({"n","v"}, "<leader>a", "<cmd>Lspsaga code_action<CR>", { silent = true })
 keymap("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", { silent = true })
-keymap('n', 'gr', require('telescope.builtin').lsp_references, {})
 
 
 
@@ -62,16 +50,17 @@ config.tsserver.setup {
   settings = { },
 }
 
-config.cucumber_language_server.setup {
-  capabilities = capabilities
-}
-
 config.jsonls.setup {
   capabilities = capabilities
 }
 
 config.eslint.setup {
   filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
+  capabilities = capabilities
+}
+
+config.graphql.setup {
+  filetypes = { "graphql" },
   capabilities = capabilities
 }
 
