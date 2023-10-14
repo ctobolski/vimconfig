@@ -1,52 +1,52 @@
-[submodule "pack/packages/start/vim-repeat"]
-	path = pack/packages/opt/vim-repeat
+[submodule "vim/pack/packages/start/vim-repeat"]
+	path = vim/pack/packages/opt/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
-[submodule "pack/packages/start/nerdcommenter"]
-	path = pack/packages/opt/nerdcommenter
+[submodule "vim/pack/packages/start/nerdcommenter"]
+	path = vim/pack/packages/opt/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "pack/packages/start/nerdtree"]
-	path = pack/packages/opt/nerdtree
+[submodule "vim/pack/packages/start/nerdtree"]
+	path = vim/pack/packages/opt/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "pack/packages/start/vim-devicons"]
-	path = pack/packages/opt/vim-devicons
+[submodule "vim/pack/packages/start/vim-devicons"]
+	path = vim/pack/packages/opt/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
-[submodule "pack/packages/opt/molokai"]
-	path = pack/packages/opt/molokai
+[submodule "vim/pack/packages/opt/molokai"]
+	path = vim/pack/packages/opt/molokai
 	url = https://github.com/tomasr/molokai.git
-[submodule "pack/packages/opt/nerdtree-git-plugin"]
-	path = pack/packages/opt/nerdtree-git-plugin
+[submodule "vim/pack/packages/opt/nerdtree-git-plugin"]
+	path = vim/pack/packages/opt/nerdtree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
-[submodule "pack/packages/start/fzf"]
-	path = pack/packages/start/fzf
+[submodule "vim/pack/packages/start/fzf"]
+	path = vim/pack/packages/start/fzf
 	url = git@github.com:junegunn/fzf.git
-[submodule "pack/packages/start/vim-surround"]
-	path = pack/packages/opt/vim-surround
+[submodule "vim/pack/packages/start/vim-surround"]
+	path = vim/pack/packages/opt/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "pack/packages/start/fzf.vim"]
-	path = pack/packages/start/fzf.vim
+[submodule "vim/pack/packages/start/fzf.vim"]
+	path = vim/pack/packages/start/fzf.vim
 	url = git@github.com:junegunn/fzf.vim.git
-[submodule "pack/packages/opt/gruvbox"]
-	path = pack/packages/start/gruvbox
+[submodule "vim/pack/packages/opt/gruvbox"]
+	path = vim/pack/packages/start/gruvbox
 	url = git@github.com:morhetz/gruvbox.git
-[submodule "pack/packages/start/vim-airline"]
-	path = pack/packages/opt/vim-airline
+[submodule "vim/pack/packages/start/vim-airline"]
+	path = vim/pack/packages/opt/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
-[submodule "pack/packages/opt/vim-graphql"]
-	path = pack/packages/opt/vim-graphql
+[submodule "vim/pack/packages/opt/vim-graphql"]
+	path = vim/pack/packages/opt/vim-graphql
 	url = git@github.com:jparise/vim-graphql.git
-[submodule "pack/packages/opt/vim-pasta"]
-	path = pack/packages/opt/vim-pasta
+[submodule "vim/pack/packages/opt/vim-pasta"]
+	path = vim/pack/packages/opt/vim-pasta
 	url = https://github.com/sickill/vim-pasta.git
-[submodule "pack/packages/opt/vim-exchange"]
-	path = pack/packages/opt/vim-exchange
+[submodule "vim/pack/packages/opt/vim-exchange"]
+	path = vim/pack/packages/opt/vim-exchange
 	url = https://github.com/tommcdo/vim-exchange.git
-[submodule "pack/packages/start/coc.nvim"]
-	path = pack/packages/opt/coc.nvim
+[submodule "vim/pack/packages/start/coc.nvim"]
+	path = vim/pack/packages/opt/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
 	branch = release
-[submodule "pack/packages/opt/vim-fugitive"]
-	path = pack/packages/opt/vim-fugitive
+[submodule "vim/pack/packages/opt/vim-fugitive"]
+	path = vim/pack/packages/opt/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "pack/packages/opt/vim-startify"]
-	path = pack/packages/start/vim-startify
+[submodule "vim/pack/packages/opt/vim-startify"]
+	path = vim/pack/packages/start/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
