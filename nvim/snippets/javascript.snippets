@@ -1,5 +1,11 @@
-# Console log
 snippet log
   console.log($1)
 
-#-------------------------------------------------------------------------
+snippet tryf "try { ... } catch(e) { ... } finally { ... }"
+	try {
+		${0:${VISUAL}}
+	} catch (${1:e}) {
+		${2:/* handle error */}
+	} finally {
+		${3:/* be executed regardless of the try / catch result*/}
+	}
