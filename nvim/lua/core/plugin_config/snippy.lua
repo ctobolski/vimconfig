@@ -10,6 +10,7 @@ snippy.setup({
 })
 
 -- Insert mode snippy completion mapping - '<Control-s>'
+-- TODO how to use visual mode snippet surround with snippy / cmp
 vim.keymap.set("i", "<C-s>", function()
   require('snippy').complete()
 end, { silent = true })

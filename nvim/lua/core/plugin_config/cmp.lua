@@ -5,7 +5,7 @@ end
 
 local cmp = require("cmp")
 
-cmp.setup.filetype({ "dart", "eruby", "html", "javascript", "ruby", "rust", "svelte", "typescript" }, {
+cmp.setup.filetype({ "html", "javascript", "typescript" }, {
   formatting = {
     format = function(entry, item)
       item.menu = ({
@@ -46,7 +46,7 @@ cmp.setup.filetype({ "dart", "eruby", "html", "javascript", "ruby", "rust", "sve
       max_item_count = 15,
       -- To list the trigger characters for the current LSP:
       --   lua print(vim.inspect(vim.lsp.buf_get_clients()[1].server_capabilities.completionProvider.triggerCharacters))
-      trigger_characters = { ".", "@", ":", "/", "'", "(", "{"},
+      trigger_characters = { ".", "@", ":", "/", "'", "(", "{" },
     },
     { name = "snippy", keyword_length = 3, max_item_count = 5 },
     { name = "buffer", keyword_length = 4, max_item_count = 10 },

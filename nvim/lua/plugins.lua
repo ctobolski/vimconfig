@@ -198,6 +198,10 @@ local plugins = {
     event = "InsertEnter",
     -- ~/dotfiles/nvim/snippets (custom snippets)
   },
+  {
+    "honza/vim-snippets",
+    event = "InsertEnter",
+  },
   -----------------------------
   -- LSP / Development plugins
   -----------------------------
