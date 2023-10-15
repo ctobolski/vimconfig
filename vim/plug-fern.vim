@@ -1,6 +1,7 @@
 "###############    FERN    ###############"
-nmap <silent> <Leader>2 :Fern %:h<CR>
-noremap <silent> <Leader>1 :Fern . -drawer -reveal=% -toggle -width=35<CR><C-w>=
+noremap <silent> <Leader>d :Fern . -drawer -reveal=% -toggle -width=35<CR><C-w>=
+noremap <silent> <Leader>f :Fern . -drawer -reveal=% -width=35<CR><C-w>=
+noremap <silent> <Leader>. :Fern %:h -drawer -width=35<CR><C-w>=
 let g:fern#disable_default_mappings = 1
 
 function! s:init_fern() abort
@@ -21,7 +22,9 @@ function! s:init_fern() abort
   nmap <buffer> v <Plug>(fern-action-open:vsplit)
   nmap <buffer> s <Plug>(fern-action-open:split)
 
-  nmap <buffer><silent> <Leader>1 :q<CR> 
+  nmap <buffer><silent> <Leader>d :q<CR>
+  nmap <buffer><silent> <Leader>f :q<CR>
+  nmap <buffer><silent> <Leader>. :q<CR>
 
   nmap <buffer><nowait> < <Plug>(fern-action-leave)
   nmap <buffer><nowait> > <Plug>(fern-action-enter)

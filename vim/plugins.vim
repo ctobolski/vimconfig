@@ -8,8 +8,10 @@ call plug#begin()
   " Style
   Plug 'morhetz/gruvbox'
   " Config
+  Plug 'wellle/targets.vim' " allows text object modifications on more stuff
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-commentary'
+  Plug 'rhysd/clever-f.vim'
   Plug 'lambdalisue/fern.vim' " nerdtree alternative
   " Search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
