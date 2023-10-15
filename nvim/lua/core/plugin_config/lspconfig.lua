@@ -1,7 +1,7 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
   -- ensure_installed = { "graphql", "gopls", "lua_ls", "tsserver", }
-  ensure_installed = {"lua_ls"}
+  ensure_installed = {"eslint", "lua_ls", "tsserver"}
 })
 
 
@@ -115,20 +115,13 @@ nvim_lsp.lua_ls.setup {
 }
 
 
--- nvim_lsp.eslint.setup({
---   on_attach = lsp_on_attach_no_formatting,
---   capabilities = capabilities,
---   filetypes = { "javascript", "typescript" },
---   flags = { debounce_text_changes = 300 },
--- })
-
--- -- pnpm add -g vscode-langservers-extracted
--- nvim_lsp.html.setup({
---   on_attach = lsp_on_attach_no_formatting,
---   capabilities = capabilities,
---   filetypes = { "eruby", "html" },
---   flags = { debounce_text_changes = 300 },
--- })
+-- MasonInstall eslint_d
+nvim_lsp.eslint.setup({
+  on_attach = lsp_on_attach_no_formatting,
+  capabilities = capabilities,
+  filetypes = { "javascript", "typescript" },
+  flags = { debounce_text_changes = 300 },
+})
 
 nvim_lsp.tsserver.setup({
   on_attach = lsp_on_attach_no_formatting,
