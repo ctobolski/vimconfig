@@ -218,6 +218,15 @@ local plugins = {
 
   "stevearc/conform.nvim", -- formatter
 
+  -----------------------------
+  -- QoL 
+  -----------------------------
+
+  {
+    "lifepillar/vim-cheat40",
+    event = "VeryLazy",
+  },
+
 }
 
 

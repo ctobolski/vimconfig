@@ -1,0 +1,99 @@
+Cheatsheet
+
+About {{{2
+  N    Normal mode
+  C    Command mode
+  I    Insert mode
+  V    Visual mode
+  M    Motion or Text object
+  O    Operator
+  *    Acts on cursor or visual text
+  %    Acts on the current buffer
+  @    Target or parameter of operation
+  #    Secondary target or parameter of operation
+}}}
+LSP Mappings {{{
+Show hover               K            *N
+Go to definition         gd           *N
+Go to declaration        gD           *N
+Go to implementation     gi           *N
+Find references          gr           *N
+Rename symbol            gR           *N
+Code actions             ga           *N
+Signature help           ‹Ctrl-k›     *I
+Fuzzy references         ‹Spc›lr       N
+Fuzzy document symbols   ‹Spc›lw       N
+Fuzz workspace symbols   ‹Spc›lW       N
+Restart Language Servers 'r            N
+}}}
+Treesitter Mappings {{{
+Inner func textobject    if          *VN
+Around func textobject   af          *VN
+Inner class textobject   ic          *VN
+Around class textobject  ac          *VN
+Previous method          [m            N
+Next method              ]m            N
+}}}
+Telescope Plugin Mappings {{{
+Files                    ‹Spc›‹Spc›    N
+Close                    ‹Esc›         N
+Scroll forward preview   ‹PageDown›    N
+Scroll back preview      ‹PageUp›      N
+Scroll forward results   ‹Ctrl-f›      N
+Scroll back preview      ‹Ctrl-b›      N
+Send to quickfix         ‹Alt-q›       N
+Sibling files            ‹Spc›.       %N
+Buffers                  ‹Spc›,        N
+Delete buffer            ‹Alt-d›       N
+Current buffer search    ‹Spc›'        N
+Resume previous state    ‹Spc›r        N
+Buffer commits           ‹Spc›c        N
+Git status               ‹Spc›g        N
+Vim help                 ‹Spc›h        N
+Highlights               ‹Spc›i        N
+Old files                ‹Spc›o        N
+Project tags             ‹Spc›]        N
+Ripgrep                  ‹Spc›/        N
+}}}
+Neo-tree Plugin Mappings {{{
+Toggle drawer            <Leader>d            N
+Find & reveal file       <Leader>f           %N
+Help                     ?             N
+}}}
+gitsigns Plugin Mappings {{{
+Previous hunk            [g            N
+Next hunk                ]g            N
+Stage hunk               '+           @N
+Revert hunk staging      '-           @N
+Preview hunk             'g           @N
+Blame line               'b           @N
+}}}
+Unimpaired Plugin Mappings {{{
+Previous file            [a            N
+Next file                ]a            N
+Move selection up        [e           VN
+Move selection down      ]e           VN
+Paste above              [p            N
+Past below               ]p            N
+Paste below with format  =P            N
+Paste above with format  =p            N
+Previous in quickfix     [q            N
+Next in quickfix         ]q            N
+Insert a line above      [‹Spc›        N
+Insert a line below      ]‹Spc›        N
+}}}
+nvim-cmp Plugin Mappings {{{
+Confirm selection        ‹CR›         %I
+}}}
+nvim-snippy Plugin Mappings {{{
+Expand snippet           ‹Ctrl-j›      I
+Jump forward             ‹Ctrl-j›      I
+Jump backward            ‹Ctrl-k›      I
+}}}
+Conform Plugin Mappings {{{
+Run formatter            'f            N
+}}}
+Lazy Plugin Mappings {{{
+Status window            's            N
+Profile tab              's            N
+}}}
