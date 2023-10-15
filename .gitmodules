@@ -1,3 +1,0 @@
-[submodule "vim/pack/packages/start/vim-repeat"]
-	path = vim/pack/packages/start/vim-repeat
-	url = https://github.com/tpope/vim-repeat.git
