@@ -181,6 +181,30 @@ local plugins = {
     build = ":TSUpdate",
     event = "BufReadPost",
   },
+  -----------------------------
+  -- Autocomplete
+  -----------------------------
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --   dependencies = {
+  --     "hrsh7th/cmp-buffer",
+  --     "hrsh7th/cmp-nvim-lsp",
+  --     "dcampos/cmp-snippy",
+  --   },
+  --   event = "InsertEnter",
+  --   config = function()
+  --     require("config.cmp")
+  --   end,
+  -- },
+  -----------------------------
+  -- LSP / Development plugins
+  -----------------------------
+  {
+    "neovim/nvim-lspconfig",
+    event = "BufReadPre",
+  },
+  "williamboman/mason.nvim", -- language server manager
+  "williamboman/mason-lspconfig.nvim", -- glue between mason and nvim-lspconfig
 }
 
 
