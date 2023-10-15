@@ -30,8 +30,14 @@ function! s:init_fern() abort
   nmap <buffer><nowait> > <Plug>(fern-action-enter)
 endfunction
 
+
 augroup fern-custom
   autocmd! *
   autocmd FileType fern call s:init_fern()
 augroup END
 
+
+"###############    FERN Git status  ###############"
+let g:fern_git_status#disable_ignored    = 1
+let g:fern_git_status#disable_untracked  = 1
+let g:fern_git_status#disable_submodules = 1

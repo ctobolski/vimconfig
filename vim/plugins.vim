@@ -11,8 +11,10 @@ call plug#begin()
   Plug 'wellle/targets.vim' " allows text object modifications on more stuff
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-fugitive'
   Plug 'rhysd/clever-f.vim'
   Plug 'lambdalisue/fern.vim' " nerdtree alternative
+  Plug 'lambdalisue/fern-git-status.vim'
   " Search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
