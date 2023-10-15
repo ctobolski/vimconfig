@@ -16,8 +16,6 @@ nmap <silent> <c-l> :wincmd l<CR>
 
 "rebind tab nav
 nmap <silent> <Leader>ww :tabclose <CR>
-nmap <silent> <Leader>j :tabprevious <CR>
-nmap <silent> <Leader>k :tabnext <CR>
 
 "binding buffers
 nmap <silent> <Leader>h :bprev<CR>
