@@ -13,6 +13,7 @@ call plug#begin()
   Plug 'lambdalisue/fern.vim' " nerdtree alternative
   " Search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
   " LSP
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   
