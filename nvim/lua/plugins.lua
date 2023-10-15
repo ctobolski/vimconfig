@@ -115,10 +115,9 @@ local plugins = {
   -----------------------------
   'ellisonleao/gruvbox.nvim',
   {   'bluz71/vim-nightfly-colors', lazy = true },
-  { 'dracula/vim', lazy = true },
-  -----------------------------
-  -- Appearance
-  -----------------------------
+  -------------------------------
+  ---- Appearance
+  -------------------------------
   { 'bluz71/nvim-linefly' },
   {
     "nvim-tree/nvim-web-devicons",
@@ -129,9 +128,10 @@ local plugins = {
     main = "ibl",
     event = "BufReadPre",
   },
-  -----------------------------
-  -- Behavior
-  -----------------------------
+  -------------------------------
+  ---- Behavior
+  -------------------------------
+
   "rhysd/clever-f.vim", -- ~/dotfiles/nvim/after/plugin/clever-f.lua
   "wellle/targets.vim",
   {
@@ -142,9 +142,11 @@ local plugins = {
   'tpope/vim-surround',
   'tpope/vim-repeat',
   'tpope/vim-commentary',
-  -----------------------------
-  -- Filesystem
-  -----------------------------
+
+  -------------------------------
+  ---- Filesystem
+  -------------------------------
+
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
@@ -158,9 +160,10 @@ local plugins = {
     },
     event = "VeryLazy",
   },
-  -----------------------------
-  -- Fuzzy
-  -----------------------------
+
+  -------------------------------
+  ---- Fuzzy
+  -------------------------------
   {
     "nvim-telescope/telescope.nvim",
     tag = '0.1.4',

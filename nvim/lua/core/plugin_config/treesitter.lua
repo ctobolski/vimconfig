@@ -7,13 +7,10 @@ treesitter.setup({
   -- Neovim 0.9 ships: c, lua, vim & vimdoc parsers
   -- Neovim 0.10 ships: bash, c, lua, markdown, markdown_inline, python, vim &
   --                    vimdoc parsers
-  --
-  ensure_installed = { 
-    "lua", "bash", "css", "go", "html", 
-    "java", "javascript", "markdown", "markdown_inline", "python",
-    "regex", "tsx", "typescript"
+  ensure_installed = {
+    "bash", "css", "go", "html", "java", "javascript",
+    "markdown", "markdown_inline", "regex", "tsx", "typescript"
   },
-
   highlight = {
     enable = true,
     disable = function(_, buf)
@@ -33,5 +30,6 @@ treesitter.setup({
         return true
       end
     end,
-  }
+  },
 })
+
