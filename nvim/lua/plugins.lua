@@ -198,6 +198,12 @@ local plugins = {
     event = "InsertEnter",
   },
 
+
+  {
+    "github/copilot.vim",
+    event = "VeryLazy",
+  }, -- a little help from our friend
+
   -----------------------------
   -- LSP / Development plugins
   -----------------------------
