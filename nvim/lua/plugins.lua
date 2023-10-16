@@ -49,39 +49,6 @@ local configuration = {
 view_config.keys.close = "<Esc>"
 view_config.keys.profile_filter = "<C-p>"
 
---local plugins = {
---  ----Toolbox
---  --"github/copilot.vim", -- a little help from our friend
---  --{
---  --  "nvimdev/lspsaga.nvim",
---  --  config = function() 
---  --    require('lspsaga').setup({
---  --      code_action_icon = "💡",
---  --      symbol_in_winbar = {
---  --        in_custom = false,
---  --        enable = true,
---  --        separator = ' ',
---  --        show_file = true,
---  --        file_formatter = ""
---  --      }
---  --    })
---  --  end
---  --},
---  --{
---  --  "ray-x/lsp_signature.nvim",
---  --  event = "VeryLazy",
---  --},
---  --{
---  --  "toppair/peek.nvim", -- preview code in popup window like markdown files
---  --  build = "deno task --quiet build:fast",
---  --},
---  --{
---  --{
---  --  'kevinhwang91/nvim-ufo',
---  --  dependencies = { {'kevinhwang91/promise-async'} }
---  --}
---}
-
 local plugins = {
   -----------------------------
   -- Colorscheme
