@@ -1,25 +1,23 @@
-local keymap = vim.api.nvim_set_keymap
 local map = vim.keymap.set
-local default_opts = { noremap = true, silent = true}
 
 vim.g.mapleader = " "
 
 -- window switching
-keymap("n", "<c-k>", ":wincmd k<CR>", default_opts)
-keymap("n", "<c-j>", ":wincmd j<CR>", default_opts)
-keymap("n", "<c-h>", ":wincmd h<CR>", default_opts)
-keymap("n", "<c-l>", ":wincmd l<CR>", default_opts)
+map("n", "<c-k>", ":wincmd k<CR>")
+map("n", "<c-j>", ":wincmd j<CR>")
+map("n", "<c-h>", ":wincmd h<CR>")
+map("n", "<c-l>", ":wincmd l<CR>")
 
 -- tab nav
-map("n", "<Leader>j", ":tabprevious <CR>", default_opts)
-keymap("n", "<Leader>k", ":tabnext <CR>", default_opts)
+map("n", "<Leader>j", ":tabprevious <CR>")
+map("n", "<Leader>k", ":tabnext <CR>")
 
 --quickly edit vimrc or source vimrc
-keymap("n", "<Leader>rc", ":tabe $MYVIMRC<CR>", default_opts)
-keymap("n", "<Leader>sc", ":source $MYVIMRC<CR>", default_opts)
+map("n", "<Leader>rc", ":tabe $MYVIMRC<CR>")
+map("n", "<Leader>sc", ":source $MYVIMRC<CR>")
 
 -- clear search results on enter
-keymap("n", "<CR>", "<CR> :noh<CR><CR>", default_opts)
+map("n", "<CR>", "<CR> :noh<CR><CR>")
 
 -------------------------------
 -- Completion mappings

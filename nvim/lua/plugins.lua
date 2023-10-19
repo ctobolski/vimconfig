@@ -56,7 +56,7 @@ local plugins = {
 
   'ellisonleao/gruvbox.nvim',
 
-  {   'bluz71/vim-nightfly-colors', lazy = true },
+  { 'bluz71/vim-nightfly-colors', lazy = true },
 
   -------------------------------
   ---- Appearance

@@ -42,11 +42,11 @@ telescope.load_extension("fzf")
 
 -- Mappings.
 local map = vim.keymap.set
-map("n", "<Space><Space>", require("telescope.builtin").find_files)
+map("n", "<c-p>", require("telescope.builtin").find_files)
 map("n", "<Space>.", function()
   require("telescope.builtin").find_files({ cwd = "%:h" })
 end)
-map("n", "<Space>,", require("telescope.builtin").buffers)
+map("n", "<Space><Space>", require("telescope.builtin").buffers)
 map("n", "<Space>'", require("telescope.builtin").current_buffer_fuzzy_find)
 map("n", "<Space>r", require("telescope.builtin").resume)
 map("n", "<Space>c", require("core.util.telescope-commands").git_bcommits)
