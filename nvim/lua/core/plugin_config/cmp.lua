@@ -5,7 +5,7 @@ end
 
 local cmp = require("cmp")
 
-cmp.setup.filetype({ "html", "javascript", "typescript" }, {
+cmp.setup({
   formatting = {
     format = function(entry, item)
       item.menu = ({
@@ -35,11 +35,13 @@ cmp.setup.filetype({ "html", "javascript", "typescript" }, {
     ["<C-Space>"] = cmp.mapping.complete(),
   },
   snippet = {
+    -- REQUIRED - you must specify a snippet engine
     expand = function(args)
-      require("snippy").expand_snippet(args.body)
+      require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
     end,
   },
   sources = {
+    { name = "luasnip", keyword_length = 3, max_item_count = 5 },
     {
       name = "nvim_lsp",
       keyword_length = 3,
@@ -48,7 +50,6 @@ cmp.setup.filetype({ "html", "javascript", "typescript" }, {
       --   lua print(vim.inspect(vim.lsp.buf_get_clients()[1].server_capabilities.completionProvider.triggerCharacters))
       trigger_characters = { ".", "@", ":", "/", "'", "(", "{" },
     },
-    { name = "snippy", keyword_length = 3, max_item_count = 5 },
     { name = "buffer", keyword_length = 4, max_item_count = 10 },
   },
   window = {

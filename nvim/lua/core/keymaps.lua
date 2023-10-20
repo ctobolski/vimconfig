@@ -19,21 +19,24 @@ map("n", "<Leader>sc", ":source $MYVIMRC<CR>")
 -- clear search results on enter
 map("n", "<CR>", "<CR> :noh<CR><CR>")
 
+vim.api.nvim_create_user_command("Cppath", function()
+    local path = vim.fn.expand("%:p")
+    vim.fn.setreg("p", path)
+    vim.notify('Copied "' .. path .. '" to the clipboard!')
+end, {})
+
+map("n", "<Leader>cp", ":Cppath<CR>")
+
 -------------------------------
 -- Completion mappings
 -------------------------------
 -- Map TAB and SHIFT-TAB to forward and backwards completion.
-map("i", "<Tab>", require("core.util.complete").tab)
-map("i", "<S-Tab>", require("core.util.complete").shift_tab)
---   ]     - 'tags' file completion
---   Space - context aware omni completion (via 'omnifunc' setting)
+-- map("i", "<Down>", require("core.util.complete").tab)
+-- map("i", "<Up>", require("core.util.complete").shift_tab)
 --   b     - keyword completion from the current buffer (<C-n><C-b> to extend)
---   d     - dictionary completion (via 'dictionary' setting)
 --   f     - file path completion
---   l     - line completion (repeat an existing line)
-map("i", "<C-]>", "<C-x><C-]>")
-map("i", "<C-Space>", "<C-x><C-o>")
 map("i", "<C-b>", "<C-x><C-p>")
-map("i", "<C-d>", "<C-x><C-k>")
 map("i", "<C-f>", "<C-x><C-f>")
-map("i", "<C-l>", "<C-x><C-l>")
+vim.notify("Loaded keymaps")
+
+

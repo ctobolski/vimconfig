@@ -2,7 +2,6 @@ local telescope = require("telescope")
 local actions = require("telescope.actions")
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
-local cmd = vim.cmd
 
 telescope.setup({
   defaults = {

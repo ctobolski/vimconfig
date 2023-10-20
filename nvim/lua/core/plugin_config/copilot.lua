@@ -12,7 +12,6 @@ local function accept_line()
   return vim.fn.split(bar, [[[\n]\zs]])[1]
 end
 
-vim.g.copilot_no_tab_map = true
 
 -- map('i', '<M-j>', '<Plug>(copilot-next)', {})
 -- map('i', '<M-k>', '<Plug>(copilot-previous)', {})
@@ -22,6 +21,5 @@ vim.g.copilot_no_tab_map = true
 -- map('i', '<M-o>', accept_word, opts)
 -- map('i', '<M-i>', accept_line, opts)
 local opts = {expr = true, remap = false}
-map( "i", "<c-j>", 'copilot#Accept("<CR>")', {expr = true, remap = false, replace_keycodes = false})
 map("n", "<Leader>ce", ":Copilot enable<CR>", opts)
 map("n", "<Leader>cd", ":Copilot disable<CR>", opts)

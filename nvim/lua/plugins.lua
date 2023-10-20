@@ -144,27 +144,24 @@ local plugins = {
   -- Autocomplete
   -----------------------------
 
-  {
-    "hrsh7th/nvim-cmp",
-    dependencies = {
-      "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-nvim-lsp",
-      "dcampos/cmp-snippy",
-    },
-    event = "InsertEnter",
-  },
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --   dependencies = {
+  --     "hrsh7th/cmp-buffer",
+  --     "hrsh7th/cmp-nvim-lsp",
+  --     "L3MON4D3/LuaSnip",
+  --     "saadparwaiz1/cmp_luasnip",
+  --   },
+  --   event = "InsertEnter",
+  -- },
 
   {
-    "dcampos/nvim-snippy",
-    event = "InsertEnter",
-    -- ~/dotfiles/nvim/snippets (custom snippets)
+    "L3MON4D3/LuaSnip",
+    -- follow latest release.
+    version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+    dependencies = { "rafamadriz/friendly-snippets" },
+    build = "make install_jsregexp"
   },
-
-  {
-    "honza/vim-snippets",
-    event = "InsertEnter",
-  },
-
 
   {
     "github/copilot.vim",
@@ -185,14 +182,14 @@ local plugins = {
     event = "BufReadPre",
   },
 
-  "williamboman/mason.nvim", -- language server manager
+  "williamboman/mason.nvim",           -- language server manager
 
   "williamboman/mason-lspconfig.nvim", -- glue between mason and nvim-lspconfig
 
-  "stevearc/conform.nvim", -- formatter
+  "stevearc/conform.nvim",             -- formatter
 
   -----------------------------
-  -- QoL 
+  -- QoL
   -----------------------------
 
   {
