@@ -41,7 +41,6 @@ local lsp_on_attach = function(client)
   map("n", "K", lsp.buf.hover, opts)
   map("n", "gr", lsp.buf.references, opts)
   map("n", "gR", lsp.buf.rename, opts)
-  map("i", "<C-k>", lsp.buf.signature_help, opts)
 
   -- Fuzzy mappings using Telescope.
   map("n", "<leader>lr", require("telescope.builtin").lsp_references)

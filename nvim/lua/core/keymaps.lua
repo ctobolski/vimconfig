@@ -37,6 +37,3 @@ map("n", "<Leader>cp", ":Cppath<CR>")
 --   f     - file path completion
 map("i", "<C-b>", "<C-x><C-p>")
 map("i", "<C-f>", "<C-x><C-f>")
-vim.notify("Loaded keymaps")
-
-
